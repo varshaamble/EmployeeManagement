@@ -16,7 +16,7 @@
 
 Before running the application, set up the MySQL database and tables:
 
-1. Create a database named `ad`:
+1. Create a database named `Employee`:
 
 ```sql
 CREATE DATABASE Employee;

@@ -1,7 +1,29 @@
-#DataBase Connection:
-1) Create a Database names ad 
-2) Create Two Tables Table :-
-  CREATE TABLE employeedetails (
+# EmployeeManagement
+
+**EmployeeManagement** is a simple and efficient Python-based application to manage employee records and automate salary processing. It is designed to help small to medium businesses keep track of employee details and generate salary slips with ease.
+
+## Features
+
+- Add, update, and delete employee records  
+- Store employee details such as name, employee code, UAN, PF, ESIC, designation, and more  
+- Monthly salary management with salary slip generation in PDF format  
+- Handles salary components including earnings, deductions, and net pay calculation  
+- Export salary slips and reports for record-keeping  
+- User-friendly interface built with Python (Tkinter or CLI depending on your app)  
+- Data storage with MySQL (or your preferred database)
+
+## Database Setup
+
+Before running the application, set up the MySQL database and tables:
+
+1. Create a database named `ad`:
+
+```sql
+CREATE DATABASE Employee;
+USE Employee;
+
+Create the required tables:
+   CREATE TABLE employeedetails (
       EmployeeCode INT(2) AUTO_INCREMENT PRIMARY KEY,
       EmployeeName VARCHAR(255) NOT NULL,
       Designation VARCHAR(50),
@@ -49,3 +71,19 @@
       TotalDeduction DECIMAL(10, 2),
       NetPay DECIMAL(10, 2)
   );
+
+
+## Installation
+mysql-connector-python
+fpdf
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/varshaamble/EmployeeManagement.git
+   cd EmployeeManagement
+
+**Run the main script:**
+python salary.py
+
+
